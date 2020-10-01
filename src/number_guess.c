@@ -27,6 +27,9 @@ int number_guess(int random_number){
             if(count==1 || count<=3){
                 printf("Very good you only took %d guess", count);
             }
+            else if(count>3 && count<=5){
+                printf("Good it took you %d guess", count);
+            }
             else if(count>3){
             printf("%s", "Correct Guess!");
             printf("\nIt took you %d guesses", count);
